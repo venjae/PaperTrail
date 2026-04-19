@@ -1,0 +1,448 @@
+[2026-04-17 21:04:42,270] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2026-04-17 21:04:42,270] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2026-04-17 21:04:47,324] INFO in app: GET / - 200
+[2026-04-17 21:04:47,325] INFO in _internal: 127.0.0.1 - - [17/Apr/2026 21:04:47] "GET / HTTP/1.1" 200 -
+[2026-04-17 21:04:47,414] INFO in app: GET /api/courses - 200
+[2026-04-17 21:04:47,415] INFO in _internal: 127.0.0.1 - - [17/Apr/2026 21:04:47] "GET /api/courses HTTP/1.1" 200 -
+[2026-04-17 21:04:47,419] INFO in app: GET /api/assignments - 200
+[2026-04-17 21:04:47,420] INFO in _internal: 127.0.0.1 - - [17/Apr/2026 21:04:47] "GET /api/assignments HTTP/1.1" 200 -
+2026-04-17 21:07:13 | INFO     | _internal:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-17 21:07:13 | INFO     | _internal:97 | [33mPress CTRL+C to quit[0m
+2026-04-17 21:07:16 | INFO     | app:41 | Request: GET / | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:07:16 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:07:16] "GET / HTTP/1.1" 200 -
+2026-04-17 21:07:16 | INFO     | app:41 | Request: GET /api/courses | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:07:16 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:07:16] "GET /api/courses HTTP/1.1" 200 -
+2026-04-17 21:07:16 | INFO     | app:41 | Request: GET /api/assignments | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:07:16 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:07:16] "GET /api/assignments HTTP/1.1" 200 -
+2026-04-17 21:07:29 | INFO     | app:41 | Request: POST /api/courses | Response: 201 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:07:29 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:07:29] "[35m[1mPOST /api/courses HTTP/1.1[0m" 201 -
+2026-04-17 21:07:29 | INFO     | app:41 | Request: GET /api/courses | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:07:29 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:07:29] "GET /api/courses HTTP/1.1" 200 -
+2026-04-17 21:07:29 | INFO     | app:41 | Request: GET /api/assignments | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:07:29 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:07:29] "GET /api/assignments HTTP/1.1" 200 -
+2026-04-17 21:07:32 | INFO     | app:41 | Request: POST /api/courses | Response: 201 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:07:32 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:07:32] "[35m[1mPOST /api/courses HTTP/1.1[0m" 201 -
+2026-04-17 21:07:32 | INFO     | app:41 | Request: GET /api/courses | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:07:32 | INFO     | app:41 | Request: GET /api/assignments | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:07:32 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:07:32] "GET /api/courses HTTP/1.1" 200 -
+2026-04-17 21:07:32 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:07:32] "GET /api/assignments HTTP/1.1" 200 -
+2026-04-17 21:07:35 | INFO     | app:41 | Request: POST /api/courses | Response: 201 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:07:35 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:07:35] "[35m[1mPOST /api/courses HTTP/1.1[0m" 201 -
+2026-04-17 21:07:35 | INFO     | app:41 | Request: GET /api/courses | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:07:35 | INFO     | app:41 | Request: GET /api/assignments | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:07:35 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:07:35] "GET /api/courses HTTP/1.1" 200 -
+2026-04-17 21:07:35 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:07:35] "GET /api/assignments HTTP/1.1" 200 -
+2026-04-17 21:07:37 | INFO     | app:41 | Request: POST /api/courses | Response: 201 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:07:37 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:07:37] "[35m[1mPOST /api/courses HTTP/1.1[0m" 201 -
+2026-04-17 21:07:38 | INFO     | app:41 | Request: GET /api/courses | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:07:38 | INFO     | app:41 | Request: GET /api/assignments | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:07:38 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:07:38] "GET /api/courses HTTP/1.1" 200 -
+2026-04-17 21:07:38 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:07:38] "GET /api/assignments HTTP/1.1" 200 -
+2026-04-17 21:12:40 | INFO     | _internal:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-17 21:12:40 | INFO     | _internal:97 | [33mPress CTRL+C to quit[0m
+2026-04-17 21:12:41 | INFO     | app:41 | Request: GET / | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:12:41 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:12:41] "GET / HTTP/1.1" 200 -
+2026-04-17 21:12:41 | INFO     | app:41 | Request: GET /api/courses | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:12:41 | INFO     | app:41 | Request: GET /api/assignments | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:12:41 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:12:41] "GET /api/courses HTTP/1.1" 200 -
+2026-04-17 21:12:41 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:12:41] "GET /api/assignments HTTP/1.1" 200 -
+2026-04-17 21:13:36 | INFO     | app:41 | Request: GET / | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:13:36 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:13:36] "GET / HTTP/1.1" 200 -
+2026-04-17 21:13:36 | INFO     | app:41 | Request: GET /api/courses | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:13:36 | INFO     | app:41 | Request: GET /api/assignments | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:13:36 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:13:36] "GET /api/courses HTTP/1.1" 200 -
+2026-04-17 21:13:36 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:13:36] "GET /api/assignments HTTP/1.1" 200 -
+2026-04-17 21:13:37 | INFO     | app:41 | Request: GET / | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:13:37 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:13:37] "GET / HTTP/1.1" 200 -
+2026-04-17 21:13:37 | INFO     | app:41 | Request: GET /api/courses | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:13:37 | INFO     | app:41 | Request: GET /api/assignments | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:13:37 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:13:37] "GET /api/courses HTTP/1.1" 200 -
+2026-04-17 21:13:37 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:13:37] "GET /api/assignments HTTP/1.1" 200 -
+2026-04-17 21:13:37 | INFO     | app:41 | Request: GET / | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:13:37 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:13:37] "GET / HTTP/1.1" 200 -
+2026-04-17 21:13:37 | INFO     | app:41 | Request: GET /api/courses | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:13:37 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:13:37] "GET /api/courses HTTP/1.1" 200 -
+2026-04-17 21:13:37 | INFO     | app:41 | Request: GET /api/assignments | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:13:37 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:13:37] "GET /api/assignments HTTP/1.1" 200 -
+2026-04-17 21:13:37 | INFO     | app:41 | Request: GET / | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:13:37 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:13:37] "GET / HTTP/1.1" 200 -
+2026-04-17 21:13:37 | INFO     | app:41 | Request: GET /api/courses | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:13:37 | INFO     | app:41 | Request: GET /api/assignments | Response: 200 | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-17 21:13:37 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:13:37] "GET /api/courses HTTP/1.1" 200 -
+2026-04-17 21:13:37 | INFO     | _internal:97 | 127.0.0.1 - - [17/Apr/2026 21:13:37] "GET /api/assignments HTTP/1.1" 200 -
+2026-04-18 20:55:36 | INFO     | _internal:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-18 20:55:36 | INFO     | _internal:97 | [33mPress CTRL+C to quit[0m
+2026-04-18 20:55:39 | INFO     | app:82 | Request: GET / | Response: 302 | IP: 127.0.0.1
+2026-04-18 20:55:39 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:55:39] "[32mGET / HTTP/1.1[0m" 302 -
+2026-04-18 20:55:39 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:55:39 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:55:39] "GET /login?next=/ HTTP/1.1" 200 -
+2026-04-18 20:55:44 | INFO     | app:82 | Request: GET /login/google | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:55:44 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:55:44] "[33mGET /login/google HTTP/1.1[0m" 404 -
+2026-04-18 20:55:47 | INFO     | app:82 | Request: GET /register | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:55:47 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:55:47] "GET /register HTTP/1.1" 200 -
+2026-04-18 20:55:48 | INFO     | app:82 | Request: GET /login/google | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:55:48 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:55:48] "[33mGET /login/google HTTP/1.1[0m" 404 -
+2026-04-18 20:56:01 | INFO     | app:82 | Request: POST /register | Response: 302 | IP: 127.0.0.1
+2026-04-18 20:56:01 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:56:01] "[32mPOST /register HTTP/1.1[0m" 302 -
+2026-04-18 20:56:01 | INFO     | app:82 | Request: GET / | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:56:01 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:56:01] "GET / HTTP/1.1" 200 -
+2026-04-18 20:56:01 | INFO     | app:82 | Request: GET /api/auth_status | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:56:01 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:56:01] "GET /api/auth_status HTTP/1.1" 200 -
+2026-04-18 20:56:01 | ERROR    | app:875 | Exception on /api/assignments [GET]
+Traceback (most recent call last):
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: assignment.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\Desktop\New folder\app.py", line 169, in get_assignments
+    assignments = Assignment.query.filter_by(user_id=current_user.id).all()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\orm\query.py", line 2711, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\orm\query.py", line 2864, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: assignment.user_id
+[SQL: SELECT assignment.id AS assignment_id, assignment.title AS assignment_title, assignment.due_date AS assignment_due_date, assignment.priority AS assignment_priority, assignment.status AS assignment_status, assignment.notes AS assignment_notes, assignment.course_id AS assignment_course_id, assignment.user_id AS assignment_user_id 
+FROM assignment 
+WHERE assignment.user_id = ?]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-18 20:56:01 | ERROR    | app:875 | Exception on /api/courses [GET]
+Traceback (most recent call last):
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: course.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\Desktop\New folder\app.py", line 228, in get_courses
+    courses = Course.query.filter_by(user_id=current_user.id).all()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\orm\query.py", line 2711, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\orm\query.py", line 2864, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\scame\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: course.user_id
+[SQL: SELECT course.id AS course_id, course.name AS course_name, course.color AS course_color, course.user_id AS course_user_id 
+FROM course 
+WHERE course.user_id = ?]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-18 20:56:01 | INFO     | app:82 | Request: GET /api/assignments | Response: 500 | IP: 127.0.0.1
+2026-04-18 20:56:01 | INFO     | app:82 | Request: GET /api/courses | Response: 500 | IP: 127.0.0.1
+2026-04-18 20:56:01 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:56:01] "[35m[1mGET /api/assignments HTTP/1.1[0m" 500 -
+2026-04-18 20:56:01 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:56:01] "[35m[1mGET /api/courses HTTP/1.1[0m" 500 -
+2026-04-18 20:56:08 | INFO     | app:82 | Request: GET /logout | Response: 302 | IP: 127.0.0.1
+2026-04-18 20:56:08 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:56:08] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-04-18 20:56:08 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:56:08 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:56:08] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:56:08 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:56:08 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:56:08] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:56:16 | INFO     | app:82 | Request: GET /register | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:56:16 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:56:16] "GET /register HTTP/1.1" 200 -
+2026-04-18 20:57:02 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:57:02 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:57:02] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:57:04 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:57:04 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:57:04] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:58:08 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:58:08 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:08] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:58:08 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:58:08 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:58:09 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:58:09 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:09] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:58:09 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:58:09 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:58:10 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:58:10 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:10] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:58:10 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:58:10 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:58:10 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:58:10 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:10] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:58:10 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:58:10 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:58:10 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:58:10 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:10] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:58:10 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:58:10 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:58:10 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:58:10 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:10] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:58:10 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:58:10 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:58:10 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:58:10 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:10] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:58:10 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:58:10 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:58:10 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:58:10 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:10] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:58:11 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:58:11 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:58:11 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:58:11 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:11] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:58:11 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:58:11 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:58:11 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:58:11 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:11] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:58:11 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:58:11 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:58:11 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:58:11 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:11] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:58:11 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:58:11 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:58:11 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:58:11 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:11] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:58:11 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:58:11 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:58:11 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:58:11 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:11] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:58:11 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:58:11 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:58:11 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:58:11 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:11] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:58:11 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:58:11 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:58:12 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:58:12 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:12] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:58:12 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:58:12 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:58:12 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:58:12 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:12] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:58:12 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:58:12 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:58:12 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:58:12 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:12] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:58:12 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:58:12 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:58:12 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:58:12 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:12] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:58:12 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:58:12 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:58:13 | INFO     | app:82 | Request: GET /register | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:58:13 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:58:13] "GET /register HTTP/1.1" 200 -
+2026-04-18 20:59:03 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:59:03 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:59:03] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:59:03 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:59:03 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:59:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:59:04 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:59:04 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:59:04] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:59:04 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:59:04 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:59:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:59:04 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:59:04 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:59:04] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:59:04 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:59:04 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:59:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:59:04 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:59:04 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:59:04] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:59:04 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:59:04 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:59:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:59:04 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:59:04 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:59:04] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:59:04 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:59:04 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:59:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:59:05 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:59:05 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:59:05] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:59:05 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:59:05 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:59:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:59:05 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:59:05 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:59:05] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:59:05 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:59:05 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:59:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:59:05 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:59:05 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:59:05] "GET /login HTTP/1.1" 200 -
+2026-04-18 20:59:05 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:59:05 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:59:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:59:17 | INFO     | _internal:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-18 20:59:17 | INFO     | _internal:97 | [33mPress CTRL+C to quit[0m
+2026-04-18 20:59:20 | INFO     | app:82 | Request: GET / | Response: 302 | IP: 127.0.0.1
+2026-04-18 20:59:20 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:59:20] "[32mGET / HTTP/1.1[0m" 302 -
+2026-04-18 20:59:20 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:59:20 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:59:20] "GET /login?next=/ HTTP/1.1" 200 -
+2026-04-18 20:59:20 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 20:59:20 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:59:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 20:59:23 | INFO     | app:82 | Request: GET /register | Response: 200 | IP: 127.0.0.1
+2026-04-18 20:59:23 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 20:59:23] "GET /register HTTP/1.1" 200 -
+2026-04-18 21:00:28 | INFO     | app:82 | Request: GET /register | Response: 200 | IP: 127.0.0.1
+2026-04-18 21:00:28 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:00:28] "GET /register HTTP/1.1" 200 -
+2026-04-18 21:00:28 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 21:00:28 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:00:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 21:00:29 | INFO     | app:82 | Request: GET /register | Response: 200 | IP: 127.0.0.1
+2026-04-18 21:00:29 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:00:29] "GET /register HTTP/1.1" 200 -
+2026-04-18 21:00:29 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 21:00:29 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:00:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 21:00:41 | INFO     | _internal:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-18 21:00:41 | INFO     | _internal:97 | [33mPress CTRL+C to quit[0m
+2026-04-18 21:00:42 | INFO     | app:82 | Request: GET / | Response: 302 | IP: 127.0.0.1
+2026-04-18 21:00:42 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:00:42] "[32mGET / HTTP/1.1[0m" 302 -
+2026-04-18 21:00:42 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 21:00:42 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:00:42] "GET /login?next=/ HTTP/1.1" 200 -
+2026-04-18 21:00:42 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 21:00:42 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:00:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 21:03:50 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 21:03:50 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:03:50] "GET /login?next=/ HTTP/1.1" 200 -
+2026-04-18 21:03:50 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 21:03:50 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:03:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 21:03:51 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 21:03:51 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:03:51] "GET /login?next=/ HTTP/1.1" 200 -
+2026-04-18 21:03:51 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 21:03:51 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:03:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 21:03:51 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 21:03:51 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:03:51] "GET /login?next=/ HTTP/1.1" 200 -
+2026-04-18 21:03:51 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 21:03:51 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:03:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 21:03:51 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 21:03:51 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:03:51] "GET /login?next=/ HTTP/1.1" 200 -
+2026-04-18 21:03:51 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 21:03:51 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:03:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 21:03:52 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 21:03:52 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:03:52] "GET /login?next=/ HTTP/1.1" 200 -
+2026-04-18 21:03:52 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 21:03:52 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:03:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 21:04:01 | INFO     | _internal:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-18 21:04:01 | INFO     | _internal:97 | [33mPress CTRL+C to quit[0m
+2026-04-18 21:04:03 | INFO     | app:82 | Request: GET / | Response: 302 | IP: 127.0.0.1
+2026-04-18 21:04:03 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:04:03] "[32mGET / HTTP/1.1[0m" 302 -
+2026-04-18 21:04:03 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 21:04:03 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:04:03] "GET /login?next=/ HTTP/1.1" 200 -
+2026-04-18 21:04:03 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 21:04:03 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:04:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 21:05:06 | INFO     | _internal:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-18 21:05:06 | INFO     | _internal:97 | [33mPress CTRL+C to quit[0m
+2026-04-18 21:05:07 | INFO     | app:82 | Request: GET / | Response: 302 | IP: 127.0.0.1
+2026-04-18 21:05:07 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:05:07] "[32mGET / HTTP/1.1[0m" 302 -
+2026-04-18 21:05:07 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 21:05:07 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:05:07] "GET /login?next=/ HTTP/1.1" 200 -
+2026-04-18 21:05:07 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 21:05:07 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:05:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 21:05:46 | INFO     | _internal:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-18 21:05:46 | INFO     | _internal:97 | [33mPress CTRL+C to quit[0m
+2026-04-18 21:05:47 | INFO     | app:82 | Request: GET / | Response: 302 | IP: 127.0.0.1
+2026-04-18 21:05:47 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:05:47] "[32mGET / HTTP/1.1[0m" 302 -
+2026-04-18 21:05:47 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 21:05:47 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:05:47] "GET /login?next=/ HTTP/1.1" 200 -
+2026-04-18 21:05:47 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 21:05:47 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:05:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 21:05:54 | INFO     | app:82 | Request: GET /register | Response: 200 | IP: 127.0.0.1
+2026-04-18 21:05:54 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:05:54] "GET /register HTTP/1.1" 200 -
+2026-04-18 21:05:57 | INFO     | app:82 | Request: GET /login/google | Response: 404 | IP: 127.0.0.1
+2026-04-18 21:05:57 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:05:57] "[33mGET /login/google HTTP/1.1[0m" 404 -
+2026-04-18 21:06:02 | INFO     | app:82 | Request: GET /login/apple | Response: 404 | IP: 127.0.0.1
+2026-04-18 21:06:02 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:06:02] "[33mGET /login/apple HTTP/1.1[0m" 404 -
+2026-04-18 21:10:35 | INFO     | _internal:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-18 21:10:35 | INFO     | _internal:97 | [33mPress CTRL+C to quit[0m
+2026-04-18 21:10:36 | INFO     | app:82 | Request: GET / | Response: 302 | IP: 127.0.0.1
+2026-04-18 21:10:36 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:10:36] "[32mGET / HTTP/1.1[0m" 302 -
+2026-04-18 21:10:36 | INFO     | app:82 | Request: GET /login | Response: 200 | IP: 127.0.0.1
+2026-04-18 21:10:36 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:10:36] "GET /login?next=/ HTTP/1.1" 200 -
+2026-04-18 21:10:36 | INFO     | app:82 | Request: GET /favicon.ico | Response: 404 | IP: 127.0.0.1
+2026-04-18 21:10:36 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:10:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-18 21:10:41 | INFO     | app:82 | Request: GET /login/apple | Response: 404 | IP: 127.0.0.1
+2026-04-18 21:10:41 | INFO     | _internal:97 | 127.0.0.1 - - [18/Apr/2026 21:10:41] "[33mGET /login/apple HTTP/1.1[0m" 404 -

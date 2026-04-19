@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Assignment Tracker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        :root {
+            --bg: #121212;
+            --card: #1e1e1e;
+            --card-hover: #2a2a2a;
+            --primary: #ffffff;
+            --danger: #ef4444;
+            --success: #22c55e;
+            --text: #ffffff;
+            --text-light: #a3a3a3;
+            --border: #333333;
+        }
+
+        @media (min-width: 768px) {
+            :root {
+                --bg: #f0f0f0;
+                --card: #ffffff;
+                --card-hover: #f5f5f5;
+                --primary: #000000;
+                --text: #111111;
+                --text-light: #666666;
+                --border: #e0e0e0;
+            }
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        h1 { font-size: 1.25rem; }
+
+        .btn {
+            padding: 10px 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .btn-primary { background: var(--primary); color: var(--bg); }
+        .btn-danger { background: var(--danger); color: white; }
+        .btn-secondary { background: var(--border); color: var(--text); }
+        .btn:hover { opacity: 0.8; }
+
+        .filters {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+            overflow-x: auto;
+            padding-bottom: 4px;
+        }
+
+        .filter-btn {
+            padding: 8px 12px;
+            border: 1px solid var(--border);
+            background: var(--card);
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            white-space: nowrap;
+            color: var(--text-light);
+        }
+
+        .filter-btn.active {
+            background: var(--primary);
+            color: var(--bg);
+            border-color: var(--primary);
+        }
+
+        .grid {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .sidebar {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 16px;
+            order: 1;
+        }
+
+        .sidebar h3 {
+            margin-bottom: 12px;
+            font-size: 0.75rem;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .course-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .course-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            background: var(--border);
+            font-size: 0.85rem;
+            transition: background 0.2s;
+        }
+
+        .course-item:hover { background: var(--card-hover); }
+        .course-item.active { background: var(--primary); color: var(--bg); }
+
+        .course-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .add-course-form {
+            display: flex;
+            gap: 8px;
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+
+        .add-course-form input[type="text"] {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--bg);
+            color: var(--text);
+            font-size: 0.9rem;
+        }
+
+        .add-course-form select {
+            padding: 8px 12px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--bg);
+            color: var(--text);
+            font-size: 0.85rem;
+            cursor: pointer;
+            min-width: 80px;
+        }
+
+        .assignments-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            order: 0;
+        }
+
+        .assignment-card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+
+        @media (min-width: 768px) {
+            .assignment-card {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+        }
+
+        .assignment-info { flex: 1; }
+
+        .assignment-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .assignment-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        .assignment-course {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .priority-badge {
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+.priority-high { background: #444; color: #fff; }
+        .priority-medium { background: #666; color: #fff; }
+        .priority-low { background: #888; color: #fff; }
+
+        .status-pending { background: #555; color: #ccc; }
+        .status-in-progress { background: #777; color: #fff; }
+        .status-completed { background: #999; color: #fff; }
+
+        .assignment-actions {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .assignment-actions select {
+            padding: 6px 8px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            background: var(--bg);
+            color: var(--text);
+            font-size: 0.8rem;
+        }
+
+        .assignment-actions .btn {
+            padding: 6px 12px;
+            font-size: 0.8rem;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: flex-end;
+            z-index: 100;
+            padding: 0;
+        }
+
+        @media (min-width: 768px) {
+            .modal {
+                align-items: center;
+                padding: 20px;
+            }
+        }
+
+        .modal.active { display: flex; }
+
+        .modal-content {
+            background: var(--card);
+            border-radius: 20px 20px 0 0;
+            padding: 24px;
+            width: 100%;
+            max-width: 500px;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        @media (min-width: 768px) {
+            .modal-content {
+                border-radius: 16px;
+            }
+        }
+
+        .modal h2 { margin-bottom: 20px; font-size: 1.25rem; }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 1rem;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .modal-actions .btn {
+            flex: 1;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-light);
+        }
+
+        .overdue {
+            border-left: 3px solid var(--danger);
+        }
+
+        @media (min-width: 768px) {
+            .container { padding: 24px; }
+            .grid { display: block; }
+            .sidebar { margin-bottom: 20px; }
+            .assignments-list { gap: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Assignment Tracker</h1>
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <button class="btn btn-primary" onclick="openModal()" style="padding: 8px 12px;">+ Add</button>
+                <span id="userName" style="font-size: 0.9rem; color: var(--text-light);"></span>
+                <button class="btn btn-secondary" onclick="logout()" style="padding: 8px 12px;">Logout</button>
+            </div>
+        </header>
+
+        <div class="filters">
+            <button class="filter-btn active" onclick="setFilter('all')">All</button>
+            <button class="filter-btn" onclick="setFilter('pending')">Pending</button>
+            <button class="filter-btn" onclick="setFilter('in-progress')">In Progress</button>
+            <button class="filter-btn" onclick="setFilter('completed')">Completed</button>
+            <button class="filter-btn" onclick="setFilter('overdue')">Overdue</button>
+        </div>
+
+        <div class="grid">
+            <aside class="sidebar">
+                <h3>Courses</h3>
+                <div id="courseList" class="course-list"></div>
+                <div class="add-course-form">
+                    <input type="text" id="courseName" placeholder="Course name">
+                    <select id="courseColor">
+                        <option value="#808080">Grey</option>
+                        <option value="#000000">Black</option>
+                        <option value="#ffffff">White</option>
+                        <option value="#444444">Dark Grey</option>
+                        <option value="#aaaaaa">Light Grey</option>
+                    </select>
+                    <button class="btn btn-secondary" onclick="addCourse()">+</button>
+                </div>
+            </aside>
+
+            <main id="assignmentsList" class="assignments-list"></main>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2 id="modalTitle">Add Assignment</h2>
+            <form id="assignmentForm">
+                <input type="hidden" id="assignmentId">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label>Course</label>
+                    <select id="courseSelect" required></select>
+                </div>
+                <div class="form-group">
+                    <label>Due Date</label>
+                    <input type="datetime-local" id="dueDate" required>
+                </div>
+                <div class="form-group">
+                    <label>Priority</label>
+                    <select id="priority">
+                        <option value="low">Low</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Notes</label>
+                    <textarea id="notes"></textarea>
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let courses = [];
+        let assignments = [];
+        let currentFilter = 'all';
+        let selectedCourse = null;
+        let user = null;
+
+        async function checkAuth() {
+            const res = await fetch('/api/auth_status');
+            const data = await res.json();
+            if (!data.authenticated) {
+                window.location.href = '/login';
+                return false;
+            }
+            user = data.user;
+            document.getElementById('userName').textContent = user.name || user.email;
+            return true;
+        }
+
+        async function logout() {
+            await fetch('/logout');
+            window.location.href = '/login';
+        }
+
+        async function loadData() {
+            const [authRes, coursesRes, assignmentsRes] = await Promise.all([
+                fetch('/api/auth_status'),
+                fetch('/api/courses'),
+                fetch('/api/assignments')
+            ]);
+            
+            const authData = await authRes.json();
+            if (!authData.authenticated) {
+                window.location.href = '/login';
+                return;
+            }
+            user = authData.user;
+            document.getElementById('userName').textContent = user.name || user.email;
+            
+            courses = await coursesRes.json();
+            assignments = await assignmentsRes.json();
+            render();
+        }
+
+        function render() {
+            renderCourses();
+            renderAssignments();
+        }
+
+        function renderCourses() {
+            const list = document.getElementById('courseList');
+            list.innerHTML = courses.map(c => `
+                <div class="course-item ${selectedCourse === c.id ? 'active' : ''}" onclick="selectCourse(${c.id})">
+                    <div class="course-dot" style="background: ${c.color}"></div>
+                    <span>${c.name}</span>
+                </div>
+            `).join('');
+
+            const select = document.getElementById('courseSelect');
+            select.innerHTML = courses.map(c => `<option value="${c.id}">${c.name}</option>`).join('');
+        }
+
+        function renderAssignments() {
+            const list = document.getElementById('assignmentsList');
+            const now = new Date();
+            let filtered = assignments;
+
+            if (selectedCourse) {
+                filtered = filtered.filter(a => a.course_id === selectedCourse);
+            }
+
+            if (currentFilter !== 'all') {
+                if (currentFilter === 'overdue') {
+                    filtered = filtered.filter(a => new Date(a.due_date) < now && a.status !== 'completed');
+                } else {
+                    filtered = filtered.filter(a => a.status === currentFilter);
+                }
+            }
+
+            filtered.sort((a, b) => new Date(a.due_date) - new Date(b.due_date));
+
+            if (filtered.length === 0) {
+                list.innerHTML = '<div class="empty-state">No assignments found</div>';
+                return;
+            }
+
+            list.innerHTML = filtered.map(a => {
+                const course = courses.find(c => c.id === a.course_id);
+                const dueDate = new Date(a.due_date);
+                const isOverdue = dueDate < now && a.status !== 'completed';
+                return `
+                    <div class="assignment-card ${isOverdue ? 'overdue' : ''}">
+                        <div class="assignment-info">
+                            <div class="assignment-title">${a.title}</div>
+                            <div class="assignment-meta">
+                                <span class="assignment-course">
+                                    <span class="course-dot" style="background: ${course?.color || '#666'}"></span>
+                                    ${course?.name || ''}
+                                </span>
+                                <span>${dueDate.toLocaleDateString()} ${dueDate.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</span>
+                                <span class="priority-badge priority-${a.priority}">${a.priority}</span>
+                                <span class="status-badge status-${a.status}">${a.status.replace('-', ' ')}</span>
+                            </div>
+                        </div>
+                        <div class="assignment-actions">
+                            <select onchange="updateStatus(${a.id}, this.value)">
+                                <option value="pending" ${a.status === 'pending' ? 'selected' : ''}>Pending</option>
+                                <option value="in-progress" ${a.status === 'in-progress' ? 'selected' : ''}>In Progress</option>
+                                <option value="completed" ${a.status === 'completed' ? 'selected' : ''}>Completed</option>
+                            </select>
+                            <button class="btn btn-secondary" onclick="editAssignment(${a.id})">Edit</button>
+                            <button class="btn btn-danger" onclick="deleteAssignment(${a.id})">Delete</button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function setFilter(filter) {
+            currentFilter = filter;
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.textContent.toLowerCase().replace(' ', '-') === filter || 
+                    (filter === 'in-progress' && btn.textContent === 'In Progress') ||
+                    (filter === 'all' && btn.textContent === 'All'));
+            });
+            renderAssignments();
+        }
+
+        function selectCourse(id) {
+            selectedCourse = selectedCourse === id ? null : id;
+            render();
+        }
+
+        async function addCourse() {
+            const name = document.getElementById('courseName').value;
+            const color = document.getElementById('courseColor').value;
+
+            if (!name) return;
+
+            const res = await fetch('/api/courses', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({name, color})
+            });
+
+            if (res.ok) {
+                document.getElementById('courseName').value = '';
+                loadData();
+            } else {
+                alert('Failed to add course');
+            }
+        }
+
+        function openModal(id = null) {
+            const modal = document.getElementById('modal');
+            const form = document.getElementById('assignmentForm');
+            
+            document.getElementById('courseSelect').innerHTML = courses.map(c => `<option value="${c.id}">${c.name}</option>`).join('');
+
+            if (id) {
+                const a = assignments.find(x => x.id === id);
+                document.getElementById('modalTitle').textContent = 'Edit Assignment';
+                document.getElementById('assignmentId').value = a.id;
+                document.getElementById('title').value = a.title;
+                document.getElementById('courseSelect').value = a.course_id;
+                document.getElementById('dueDate').value = a.due_date.slice(0, 16);
+                document.getElementById('priority').value = a.priority;
+                document.getElementById('notes').value = a.notes;
+            } else {
+                document.getElementById('modalTitle').textContent = 'Add Assignment';
+                document.getElementById('assignmentId').value = '';
+                document.getElementById('title').value = '';
+                document.getElementById('dueDate').value = '';
+                document.getElementById('priority').value = 'medium';
+                document.getElementById('notes').value = '';
+            }
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.remove('active');
+        }
+
+        document.getElementById('assignmentForm').onsubmit = async (e) => {
+            e.preventDefault();
+            const id = document.getElementById('assignmentId').value;
+            const data = {
+                title: document.getElementById('title').value,
+                course_id: parseInt(document.getElementById('courseSelect').value),
+                due_date: document.getElementById('dueDate').value,
+                priority: document.getElementById('priority').value,
+                notes: document.getElementById('notes').value
+            };
+
+            if (id) {
+                await fetch(`/api/assignments/${id}`, {
+                    method: 'PUT',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify(data)
+                });
+            } else {
+                await fetch('/api/assignments', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify(data)
+                });
+            }
+
+            closeModal();
+            loadData();
+        };
+
+        function editAssignment(id) {
+            openModal(id);
+        }
+
+        async function deleteAssignment(id) {
+            if (confirm('Delete this assignment?')) {
+                await fetch(`/api/assignments/${id}`, {method: 'DELETE'});
+                loadData();
+            }
+        }
+
+        async function updateStatus(id, status) {
+            await fetch(`/api/assignments/${id}`, {
+                method: 'PUT',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({status})
+            });
+            loadData();
+        }
+
+        loadData();
+    </script>
+</body>
+</html>
